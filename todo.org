@@ -1,0 +1,12 @@
+#+title: Todo
+
+* TODO Port old posts to new site
+* TODO Get pictures for the site.
+- home
+- about
+- gallery
+- contact
+- services
+- author picture
+* TODO Write new post on 75 hard week 1
+* TODO Design new logo

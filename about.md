@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About this blog
-description: An optional about page for BlogBox Jekyll theme
+title: About Me
+description: Information about Anrich Tait
 featured_image: aboutPage.jpg
 ---
 
@@ -12,6 +12,3 @@ Anrich Tait is a fitness devotee, tech enthusiast, and wellness advocate. His ca
 Best known for his no-fluff approach to self-improvement, Anrich is busy building himself and searching for the real meaning of this life we find ourselves living.
 
 > "The people who shit on you for working hard are asking you to accept a version of yourself that’s short of your potential." <cite>- Alex Hormozi -</cite>
-
-
-*Thank You for reading!*
