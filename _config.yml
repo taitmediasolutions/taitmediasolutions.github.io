@@ -22,12 +22,15 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Style Guide
-  url: /style-guide/
-- text: Archives
-  url: /tags/
 - text: Gallery
   url: /gallery/
+- text: Contact
+  url: /contact/
+- text: Services
+  url: /services/
+- text: Previous Posts
+  url: /tags/
+
 
 # Author information - author info at the bottom of the post
 author_name: "Anrich Tait"
