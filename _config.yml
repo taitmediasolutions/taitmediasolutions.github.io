@@ -1,14 +1,14 @@
-title: Anrich Tait Projects
+title: Tait Media Solutions
 
-tagline: Building Strength, Inside and Out
+tagline: Digital Marketing Agency
 
 logo:
 
 description: |
-  Offering a glimpse into the routines, fitness, thoughts and practices that shape my day to day life.
+  Tait Media Solutions specializes in helping the creators and businesses of tomorrow build a lasting brand.
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: https://anrichtait.github.io
+url: https://taitmediasolutions.github.io
 
 # The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
 baseurl:
@@ -34,8 +34,8 @@ navigation:
 
 # Author information - author info at the bottom of the post
 author_name: "Anrich Tait"
-author_bio: "Hi there, I’m Anrich Tait. I like to work out, learn deeply, and live fully—sharing the journey of strength, growth, and everyday discipline"
-author_url: "https://www.instagram.com/anrichtait/"
+author_bio: "Anrich Tait is the founder and creative director of Tait Media Solutions, where he helps brands grow through bold strategy and compelling media. When he's not collaborating with clients, he's either spending time with his family, refining his personal brand, or building one of his many passion-driven ventures."
+author_url: "https://www.instagram.com/mister.tait/"
 Author_location: "South Africa"
 author_image: authorimage.jpg
 
