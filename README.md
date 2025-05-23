@@ -1,3 +1,1 @@
-# Anrich Tait Projects 
-
-This repo stores my public website
+Tait Media Solutions Website
