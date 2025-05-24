@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-description: Information about Anrich Tait
+description: Tait Media Solutions About Page
 featured_image: aboutPage.jpg
 ---
 
