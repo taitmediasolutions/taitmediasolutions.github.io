@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Services
-description: Anrich Tait's services and skills.
+description: Services offered by Tait Media Solutions
 featured_image: services.jpg
 ---
 
-# COMING SOON!
+# Check back soon for detailed information on the services we offer!
