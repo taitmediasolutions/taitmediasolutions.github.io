@@ -22,13 +22,13 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Gallery
-  url: /gallery/
+- text: Brands
+  url: /brands/
 - text: Contact
   url: /contact/
 - text: Services
   url: /services/
-- text: Previous Posts
+- text: Articles
   url: /tags/
 
 
