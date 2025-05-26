@@ -1,37 +1,20 @@
-<footer class="site-footer">
-    <div class="inner">
-        <div class="social-links">
-            {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span></a>
-            {% endif %}
-            {% if site.facebook_username %}
-            <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
-            {% endif %}
-            {% if site.linkedin_username %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" ><i class="fa fa-linkedin" aria-hidden="true"></i><span class="screen-reader-text">LinkedIn</span></a>
-            {% endif %}
-            {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github" aria-hidden="true"></i><span class="screen-reader-text">GitHub</span></a>
-            {% endif %}
-            {% if site.codepen_username %}
-            <a href="https://codepen.io/{{ site.codepen_username }}"><i class="fa fa-codepen" aria-hidden="true"></i><span class="screen-reader-text">Codepen</span></a>
-            {% endif %}
-            {% if site.dribbble_username %}
-            <a href="https://dribbble.com/{{ site.dribbble_username }}"><i class="fa fa-dribbble" aria-hidden="true"></i><span class="screen-reader-text">Dribbble</span></a>
-            {% endif %}
-            {% if site.medium_username %}
-            <a href="https://medium.com/{{ site.medium_username }}"><i class="fa fa-medium" aria-hidden="true"></i><span class="screen-reader-text">Medium</span></a>
-            {% endif %}
-            {% if site.instagram_username %}
-            <a href="https://www.instagram.com/{{ site.instagram_username }}" ><i class="fa fa-instagram" aria-hidden="true"></i><span class="screen-reader-text">Instagram</span></a>
-            {% endif %}
-            {% if site.pinterest_username %}
-            <a href="https://www.pinterest.com/{{ site.pinterest_username }}"><i class="fa fa-pinterest" aria-hidden="true"></i><span class="screen-reader-text">Pinterest</span></a>
-            {% endif %}
-        </div><!-- .social-links -->
-        <div class="copyright">
-            &copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{site.title}}</a> <br />BlogBox theme by <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>
-        </div><!-- .copyright -->
-        <a href="#page" id="top-link" class="top-link"><i class="fa fa-chevron-up" aria-hidden="true"></i><span class="screen-reader-text">Back to the top</span></a>
-    </div><!-- .inner -->
-</footer><!-- .site-footer -->
+<footer class="site-footer" style="background: #111; color: #ccc; padding: 2rem 1rem; font-size: 0.9rem;">
+  <div class="inner" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem;">
+
+    <!-- Social Links -->
+    <div>
+      <h3 style="color: white; margin-bottom: 0.5rem;">Follow Us</h3>
+      <div style="display: flex; justify-content: center; gap: 1rem; font-size: 1.5rem;">
+        <a href="https://www.instagram.com/taitmediasolutions" target="_blank" style="color: #ccc; transition: color 0.3s;"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/taitmediasolutions" target="_blank" style="color: #ccc; transition: color 0.3s;"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/anrichtait" target="_blank" style="color: #ccc; transition: color 0.3s;"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@taitmediasolutions" target="_blank" style="color: #ccc;"><i class="fa fa-youtube-play"></i></a></div></div>
+
+    <!-- Logo and Copyright -->
+    <div style="margin-top: 2rem;">
+      <img src="{{ site.baseurl }}/images/icon.png" alt="Tait Media Logo" style="max-width: 120px; opacity: 0.8;" />
+      <p style="margin-top: 1rem;">&copy; {{ site.time | date: '%Y' }} Tait Media Solutions. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
