@@ -1,55 +1,84 @@
 ---
 layout: default
 ---
+
 <main class="content fade-in-down delay-0_75s">
   <div class="inner">
 
     <!-- Hero Section -->
-    <section class="hero" style="text-align: center; margin-bottom: 3rem;">
-      <h1>Welcome to <strong>Tait Media Solutions</strong></h1>
-      <p>We build, manage, and grow digital brands with purpose and precision.</p>
+    <section class="hero text-center py-8">
+      <h1 style="color: white; text-align: center" class="hero-title">Welcome to <strong>Tait Media Solutions</strong></h1>
+      <p style="text-align: center" class="hero-subtitle">We specialize in helping the creators and businesses of tomorrow build lasting brands.</p>
     </section>
 
     <!-- Brands Section -->
-    <section class="brands" style="margin-bottom: 3rem;">
-      <h2>Our Brands</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.5rem;">
-        <div style="flex: 1; min-width: 200px;">
-          <h3>🏋️ Anrich Fitness</h3>
-          <p>Fitness content, 75 Hard journey, mindset and training tips. Follow the transformation.</p>
-          <a href="https://instagram.com/YOUR_PROFILE" target="_blank">Follow on Instagram</a>
+    <section class="brands py-8">
+      <h2 class="section-title text-center">Our Brands</h2>
+      <div class="brands-grid">
+        
+        <!-- Brand 1 -->
+        <div class="brand-card">
+          <img
+            src="{{ site.baseurl }}/images/mrtait.png"
+            alt="Anrich Tait Logo"
+            class="brand-logo"
+          />
+          <h3 class="brand-name">Anrich Tait</h3>
+          <p class="brand-description">
+            Personal social media brand focused on physical transformation & productivity.
+          </p>
+          <a href="https://instagram.com/mister.tait" target="_blank" class="brand-link">
+            Learn More…
+          </a>
         </div>
-        <div style="flex: 1; min-width: 200px;">
-          <h3>🧥 Forge & Flow Clothing</h3>
-          <p>Streetwear and gymwear for those who live with intention. Launching soon.</p>
-          <a href="/forge-flow">Visit Brand Page</a>
+        
+        <!-- Brand 2 -->
+        <div class="brand-card">
+          <img
+            src="{{ site.baseurl }}/images/edgeathletic.png"
+            alt="Edge Athletic Co Logo"
+            class="brand-logo"
+          />
+          <h3 class="brand-name">Edge Athletic Co</h3>
+          <p class="brand-description">
+            Streetwear & gymwear for those who live with intention. Launching soon.
+          </p>
+          <a href="https://edgeathleticco.github.io" target="_blank" class="brand-link">
+            Coming Soon…
+          </a>
         </div>
-        <div style="flex: 1; min-width: 200px;">
-          <h3>📈 Tait Ad Agency</h3>
-          <p>Helping creators and businesses grow with clean strategy and sharp storytelling.</p>
-          <a href="/ad-agency">Work With Us</a>
+        
+        <!-- Brand 3 -->
+        <div class="brand-card">
+          <img
+            src="{{ site.baseurl }}/images/mm.png"
+            alt="Momster Monologues Logo"
+            class="brand-logo"
+          />
+          <h3 class="brand-name">Momster Monologues</h3>
+          <p class="brand-description">
+            Helping creators & businesses grow with clean strategy and sharp storytelling.
+          </p>
+          <a href="https://momstermonologues.github.io" target="_blank" class="brand-link">
+            Learn More…
+          </a>
         </div>
+
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" style="margin-bottom: 3rem;">
-      <h2>About Us</h2>
-      <p>
-        Tait Media Solutions is a South African media company led by Anrich — a coder, Muay Thai practitioner,
-        and creative strategist. We blend discipline and design to build brands that stand for something.
-      </p>
-    </section>
-
     <!-- Contact Section -->
-    <section class="contact" style="text-align: center;">
-      <h2>Let’s Connect</h2>
-      <p>Want to collaborate or learn more? Reach out below:</p>
-      <a href="mailto:your@email.com" class="button">📩 Email Us</a>
-      <br><br>
-      <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank">Instagram</a> •
-      <a href="https://www.tiktok.com/@YOUR_PROFILE" target="_blank">TikTok</a> •
-      <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">YouTube</a>
+    <section class="contact text-center py-8">
+      <h2 class="section-title">Let’s Connect</h2>
+      <p class="contact-text">Want to collaborate or learn more? Reach out below:</p>
+      <a href="mailto:taitmediasolutions@gmail.com" class="button">📩 Email Us</a>
+      <div class="social-links mt-4">
+        <a href="https://www.instagram.com/taitmediasolutions" target="_blank">Instagram</a>
+         • 
+        <a href="https://www.facebook.com/taitmediasolutions" target="_blank">Facebook</a>
+         • 
+        <a href="https://www.youtube.com/@taitmediasolutions" target="_blank">YouTube</a>
+      </div>
     </section>
 
   </div>

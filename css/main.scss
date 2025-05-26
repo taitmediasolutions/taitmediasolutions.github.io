@@ -965,3 +965,74 @@ ul.search-results {
         padding-left: 0;
     }
 }
+
+
+
+
+/* Utility helpers */
+.text-center { text-align: center; }
+.py-8 { padding: 4rem 0; }
+.mt-4 { margin-top: 1rem; }
+
+/* Hero */
+.hero-title {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #ddd;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* Brands grid */
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.brand-card {
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 300px;
+  text-align: center;
+}
+.brand-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.brand-name {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.brand-description {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.brand-link {
+  font-weight: bold;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+/* Contact */
+.contact-text {
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+.social-links a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
