@@ -2,19 +2,55 @@
 layout: default
 ---
 <main class="content fade-in-down delay-0_75s">
-    <div class="inner">
-        {% include loop.html %}
-        {% if paginator.total_pages > 1 %}
-        <nav class="pagination">
-            <h2 class="screen-reader-text">Posts navigation</h2>
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="newer-posts"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer Posts</a>
-            {% endif %}
-            <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="older-posts">Older Posts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            {% endif %}
-        </nav><!-- .pagination -->
-        {% endif %}
-    </div><!-- .inner -->
-</main><!-- .content -->
+  <div class="inner">
+
+    <!-- Hero Section -->
+    <section class="hero" style="text-align: center; margin-bottom: 3rem;">
+      <h1>Welcome to <strong>Tait Media Solutions</strong></h1>
+      <p>We build, manage, and grow digital brands with purpose and precision.</p>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" style="margin-bottom: 3rem;">
+      <h2>Our Brands</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.5rem;">
+        <div style="flex: 1; min-width: 200px;">
+          <h3>🏋️ Anrich Fitness</h3>
+          <p>Fitness content, 75 Hard journey, mindset and training tips. Follow the transformation.</p>
+          <a href="https://instagram.com/YOUR_PROFILE" target="_blank">Follow on Instagram</a>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+          <h3>🧥 Forge & Flow Clothing</h3>
+          <p>Streetwear and gymwear for those who live with intention. Launching soon.</p>
+          <a href="/forge-flow">Visit Brand Page</a>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+          <h3>📈 Tait Ad Agency</h3>
+          <p>Helping creators and businesses grow with clean strategy and sharp storytelling.</p>
+          <a href="/ad-agency">Work With Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" style="margin-bottom: 3rem;">
+      <h2>About Us</h2>
+      <p>
+        Tait Media Solutions is a South African media company led by Anrich — a coder, Muay Thai practitioner,
+        and creative strategist. We blend discipline and design to build brands that stand for something.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" style="text-align: center;">
+      <h2>Let’s Connect</h2>
+      <p>Want to collaborate or learn more? Reach out below:</p>
+      <a href="mailto:your@email.com" class="button">📩 Email Us</a>
+      <br><br>
+      <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank">Instagram</a> •
+      <a href="https://www.tiktok.com/@YOUR_PROFILE" target="_blank">TikTok</a> •
+      <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">YouTube</a>
+    </section>
+
+  </div>
+</main>
