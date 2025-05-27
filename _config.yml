@@ -19,8 +19,6 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Brands
-  url: /brands/
 - text: Contact
   url: /contact/
 - text: Services
