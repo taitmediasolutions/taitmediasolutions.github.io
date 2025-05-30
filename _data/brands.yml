@@ -1,0 +1,9 @@
+- name: Edge Athletic .Co
+  description: "Streetwear & gymwear for those who live with intention."
+  url: "https://edgeathleticco.github.io"
+  logo: "/images/edgeathletic.png"
+
+- name: Momster Monologues
+  description: "Unfiltered, hilarious dispatches from the beautiful chaos of modern motherhood."
+  url: "https://momstermonologues.github.io"
+  logo: "/images/mm.jpeg"

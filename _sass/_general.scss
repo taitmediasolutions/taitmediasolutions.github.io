@@ -5,9 +5,8 @@
 html {
     font-family: $base-font;
 }
-
 body {
-    background-color: #30373d;
+    background-color: #ffffff;
     color: #606669;
     line-height: 1.66667;
 }
@@ -213,7 +212,7 @@ button,
 input,
 select,
 textarea {
-    background-color: #dbdedf;
+    background-color: #ffffff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0;
@@ -237,7 +236,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     outline: 0;
 }
 

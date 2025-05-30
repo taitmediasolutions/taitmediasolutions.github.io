@@ -2,46 +2,43 @@
 layout: default
 ---
 
-<main class="home-hero">
-
-<!-- Banner Section -->
-<section class="hero-banner">
-  <img
-    src="{{ site.baseurl }}/images/banner.png"
-    alt="Tait Media Solutions"
-    class="banner-image"
-  />
-</section>
+<main>
+  <!-- Banner Section -->
+  <section class="hero-banner">
+    <img
+      src="{{ site.baseurl }}/images/banner.png"
+      alt="Tait Media Solutions"
+      class="banner-image"
+    />
+  </section>
 
   <!-- Intro / Description -->
-  <section class="always-white">
+  <section class="intro">
     <p>
       Tait Media Solutions specializes in helping the creators and businesses of
       tomorrow build a lasting brand.
     </p>
   </section>
 
-  <!-- Brands Section -->
+  <!-- Our Brands -->
   <section class="brands">
-    <h2 class="section-heading">Our Brands</h2>
+    <h2 class="text-center">Our Brands</h2>
     <div class="brands-grid">
-      <!-- repeat your brand-cards here (same structure as before) -->
       {% for brand in site.data.brands %}
       <div class="brand-card">
         <img src="{{ brand.logo }}" alt="{{ brand.name }} logo" />
         <h3>{{ brand.name }}</h3>
         <p>{{ brand.description }}</p>
-        <a href="{{ brand.url }}" target="_blank" class="link">Learn More…</a>
+        <a href="{{ brand.url }}" target="_blank">Learn More…</a>
       </div>
       {% endfor %}
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact text-center">
-    <h2 class="section-heading">Let’s Connect</h2>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Let’s Connect</h2>
     <p>Want to collaborate or learn more? Reach out below:</p>
-    <a href="mailto:info@taitmediasolutions.com" class="cta">📩 Email Us</a>
+    <a href="mailto:info@taitmediasolutions.com">📩 Email Us</a>
   </section>
-
 </main>

@@ -31,6 +31,14 @@ author_url: "https://www.instagram.com/mister.tait/"
 Author_location: "South Africa"
 author_image: authorimage.jpg
 
+social:
+  twitter: "https://twitter.com/yourusername"
+  facebook: "https://facebook.com/yourusername"
+  instagram: "https://instagram.com/yourusername"
+  linkedin: "https://linkedin.com/in/yourusername"
+  github: "https://github.com/yourusername"
+  youtube: "https://youtube.com/c/yourusername"
+
 facebook_username: "username"
 instagram_username: "taitmediasolutions"
 youtube_username: "taitmediasolutions"
