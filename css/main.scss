@@ -19,8 +19,8 @@ main > section {
 
 // Alternate backgrounds/text
 main > section:nth-of-type(odd) {
-  background: $white;
-  color: $black;
+  background: $black;
+  color: $white;
 }
 main > section:nth-of-type(even) {
   background: $black;

@@ -5,14 +5,9 @@
 html {
     font-family: $base-font;
 }
-body {
-    background-color: #ffffff;
-    color: #606669;
-    line-height: 1.66667;
-}
 
 a {
-    color: $accent-color;
+    color: $white;
     text-decoration: underline;
     -webkit-transition: .3s;
     transition: .3s;
@@ -78,7 +73,7 @@ address {
 
 mark,
 ins {
-    background-color: #f2f2f2;
+    background-color: #white;
     color: inherit;
     padding: 0 3px;
     text-decoration: none;
@@ -91,7 +86,7 @@ code {
 }
 
 pre {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-size: 14px;
     line-height: 1.5;
     margin: 0 0 24px;
@@ -107,8 +102,8 @@ pre code {
 }
 
 blockquote {
-    border-bottom: 3px solid #f2f2f2;
-    border-top: 3px solid #f2f2f2;
+    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
     color: #30373d;
     font-size: 24px;
     font-style: italic;
@@ -191,7 +186,7 @@ th {
 }
 
 hr {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border: 0;
     height: 3px;
     margin: 24px 0;
@@ -244,7 +239,7 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-    background-color: $accent-color;
+    background-color: #ffffff;
     color: #fff;
     font-weight: bold;
     height: 40px;
