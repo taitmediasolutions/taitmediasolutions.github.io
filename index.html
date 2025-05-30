@@ -2,77 +2,46 @@
 layout: default
 ---
 
-<main class="content fade-in-down delay-0_75s">
-  <div class="inner">
+<main class="home-hero">
 
-    <!-- Hero Section -->
-    <section class="hero text-center py-8">
-      <h1 style="color: white; text-align: center" class="hero-title">Welcome to <strong>Tait Media Solutions</strong></h1>
-      <p style="text-align: center" class="hero-subtitle">A boutique digital marketing agency that specializes in helping the creators and businesses of tomorrow build lasting brands.</p>
-    </section>
+<!-- Banner Section -->
+<section class="hero-banner">
+  <img
+    src="{{ site.baseurl }}/images/banner.png"
+    alt="Tait Media Solutions"
+    class="banner-image"
+  />
+</section>
 
-    <!-- Brands Section -->
-    <section class="brands py-8">
-      <h2 class="section-title text-center">Our Brands</h2>
-      <div class="brands-grid">
-        
-        <!-- Brand 1 -->
-        <div class="brand-card">
-          <img
-            src="{{ site.baseurl }}/images/mrtait.png"
-            alt="Anrich Tait Logo"
-            class="brand-logo"
-          />
-          <h3 class="brand-name">Anrich Tait</h3>
-          <p class="brand-description">
-            Personal social media brand focused on physical transformation & productivity.
-          </p>
-          <a href="https://instagram.com/mister.tait" target="_blank" class="brand-link">
-            Learn More…
-          </a>
-        </div>
-        
-        <!-- Brand 2 -->
-        <div class="brand-card">
-          <img
-            src="{{ site.baseurl }}/images/edgeathletic.png"
-            alt="Edge Athletic Co Logo"
-            class="brand-logo"
-          />
-          <h3 class="brand-name">Edge Athletic .Co</h3>
-          <p class="brand-description">
-            Streetwear & gymwear for those who live with intention.
-          </p>
-          <a href="https://edgeathleticco.github.io" target="_blank" class="brand-link">
-            Coming Soon…
-          </a>
-        </div>
-        
-        <!-- Brand 3 -->
-        <div class="brand-card">
-          <img
-            src="{{ site.baseurl }}/images/mm.png"
-            alt="Momster Monologues Logo"
-            class="brand-logo"
-          />
-          <h3 class="brand-name">Momster Monologues</h3>
-          <p class="brand-description">
-            Unfiltered, hilarious dispatches from the beautiful chaos of modern motherhood.
-          </p>
-          <a href="https://momstermonologues.github.io" target="_blank" class="brand-link">
-            Coming Soon...
-          </a>
-        </div>
+  <!-- Intro / Description -->
+  <section class="always-white">
+    <p>
+      Tait Media Solutions specializes in helping the creators and businesses of
+      tomorrow build a lasting brand.
+    </p>
+  </section>
 
+  <!-- Brands Section -->
+  <section class="brands">
+    <h2 class="section-heading">Our Brands</h2>
+    <div class="brands-grid">
+      <!-- repeat your brand-cards here (same structure as before) -->
+      {% for brand in site.data.brands %}
+      <div class="brand-card">
+        <img src="{{ brand.logo }}" alt="{{ brand.name }} logo" />
+        <h3>{{ brand.name }}</h3>
+        <p>{{ brand.description }}</p>
+        <a href="{{ brand.url }}" target="_blank" class="link">Learn More…</a>
       </div>
-    </section>
+      {% endfor %}
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact text-center py-8">
-      <h2 class="section-title">Let’s Connect</h2>
-      <p class="contact-text">Want to collaborate or learn more? Reach out below:</p>
-      <a href="mailto:info@taitmediasolutions.com" class="button">📩 Email Us</a>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact text-center">
+    <h2 class="section-heading">Let’s Connect</h2>
+    <p>Want to collaborate or learn more? Reach out below:</p>
+    <a href="mailto:info@taitmediasolutions.com" class="cta">📩 Email Us</a>
+  </section>
 
-  </div>
 </main>
