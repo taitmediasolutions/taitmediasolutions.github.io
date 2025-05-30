@@ -6,6 +6,12 @@ html {
     font-family: $base-font;
 }
 
+body {
+    background-color: #30373d;
+    color: #606669;
+    line-height: 1.66667;
+}
+
 a {
     color: $white;
     text-decoration: underline;
@@ -73,7 +79,7 @@ address {
 
 mark,
 ins {
-    background-color: #white;
+    background-color: #f2f2f2;
     color: inherit;
     padding: 0 3px;
     text-decoration: none;
@@ -86,7 +92,7 @@ code {
 }
 
 pre {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     font-size: 14px;
     line-height: 1.5;
     margin: 0 0 24px;
@@ -102,8 +108,8 @@ pre code {
 }
 
 blockquote {
-    border-bottom: 3px solid #ffffff;
-    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: 3px solid #f2f2f2;
     color: #30373d;
     font-size: 24px;
     font-style: italic;
@@ -186,7 +192,7 @@ th {
 }
 
 hr {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     border: 0;
     height: 3px;
     margin: 24px 0;
@@ -207,12 +213,12 @@ button,
 input,
 select,
 textarea {
-    background-color: #ffffff;
+    background-color: #dbdedf;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0;
     border-radius: 2px;
-    color: #ffffff;
+    color: #606669;
     display: inline-block;
     font-family: $alt-font;
     font-size: 16px;
@@ -231,7 +237,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     outline: 0;
 }
 
@@ -239,7 +245,7 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-    background-color: #ffffff;
+    background-color: $white;
     color: #fff;
     font-weight: bold;
     height: 40px;
@@ -258,7 +264,7 @@ input[type="button"]:active,
 input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="reset"]:active {
-    background-color: #ffffff;
+    background-color: #606669;
     outline: 0;
 }
 

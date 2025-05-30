@@ -1,3 +1,6 @@
+---
+---
+
 // Variables: only three colors
 $white: #ffffff;
 $black: #000000;
@@ -34,10 +37,10 @@ main > section:nth-of-type(even) {
 .hero-banner {
   width: 100%;
   overflow: hidden;
-  text-align: center;         // center contents
+  text-align: center;         
 }
 .banner-image {
-  display: inline-block;      // shrink to content
+  display: inline-block;     
   max-width: 100%;
   height: auto;
   object-fit: cover;
