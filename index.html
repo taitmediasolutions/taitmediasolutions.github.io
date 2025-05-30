@@ -4,7 +4,7 @@ layout: default
 
 <main>
   <!-- Banner Section -->
-  <section class="hero-banner">
+  <section class="hero-banner white-section">
     <img
       src="{{ site.baseurl }}/images/banner.png"
       alt="Tait Media Solutions"
@@ -13,15 +13,45 @@ layout: default
   </section>
 
   <!-- Intro / Description -->
-  <section class="intro">
+  <section class="intro white-section">
     <p>
       Tait Media Solutions specializes in helping the creators and businesses of
       tomorrow build a lasting brand.
     </p>
   </section>
 
+ <section class="values white-section text-center">
+    <h2 class="section-heading">Our Core Values</h2>
+    <div class="values-grid">
+      <!-- Value 1 -->
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/graphic1.jpg" alt="Luxury" class="value-image" />
+        <h3>Luxury</h3>
+        <p>We craft every detail to exude sophistication and elegance.</p>
+      </div>
+      <!-- Value 2 -->
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/graphic2.jpg" alt="Vision" class="value-image" />
+        <h3>Vision</h3>
+        <p>Building brands from the ground up with a forward-thinking mindset.</p>
+      </div>
+      <!-- Value 3 -->
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/graphic3.jpg" alt="Veracity" class="value-image" />
+        <h3>Veracity</h3>
+        <p>We stand on truth and clarity—our strategies are backed by data and honesty.</p>
+      </div>
+      <!-- Value 4 -->
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/graphic4.jpg" alt="Innovation" class="value-image" />
+        <h3>Innovation</h3>
+        <p>Constantly pushing boundaries to keep your brand ahead of the curve.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Our Brands -->
-  <section class="brands">
+  <section class="brands black-section">
     <h2 class="text-center">Our Brands</h2>
     <div class="brands-grid">
       {% for brand in site.data.brands %}
@@ -36,3 +66,19 @@ layout: default
   </section>
 
 </main>
+
+
+  </div><!-- .insta-grid -->
+
+  <!-- Follow CTA -->
+  <div class="follow-instagram text-center black-section" style="margin-top:2rem;">
+    <a
+      href="https://instagram.com/{{ site.instagram_username }}"
+      target="_blank"
+      class="cta"
+      style="display:inline-block; padding:0.75rem 2rem; border:2px solid currentColor; text-transform:uppercase;"
+    >
+      Follow us on Instagram @{{ site.instagram_username }}
+    </a>
+  </div>
+</section>

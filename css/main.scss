@@ -15,19 +15,43 @@ body {
   color: $black;
 }
 
+
 main > section {
+
   padding: 4rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
 
-// Alternate backgrounds/text
-main > section:nth-of-type(odd) {
-  background: $black;
-  color: $white;
+
+.white-section {
+  background: $white;
+  color: $black;
+
+  a, .link, .cta {
+    color: $black;
+    border-color: $black;
+  }
 }
-main > section:nth-of-type(even) {
+
+.black-section {
   background: $black;
   color: $white;
+
+  a, .link, .cta {
+    color: $white;
+    border-color: $white;
+  }
+}
+
+// If you ever need grey:
+.grey-section {
+  background: $grey;
+  color: $black;
+
+  a, .link, .cta {
+    color: $black;
+    border-color: $black;
+  }
 }
 
 // Center utility
@@ -41,7 +65,7 @@ main > section:nth-of-type(even) {
 }
 .banner-image {
   display: inline-block;     
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -89,4 +113,305 @@ main > section:nth-of-type(even) {
     background: currentColor;
     color: $white;
   }
+}
+
+/**
+ * Site Navigation
+ * ----------------------------------------
+ */
+
+.site-nav {
+    background-color: $white;
+}
+
+.fixed-nav .site-nav {
+    border-bottom: 1px solid $white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+}
+
+.site-nav .inner {
+    position: relative;
+}
+
+.nav-menu {
+  font: bold 12px/1.5 $alt-font;
+  text-transform: uppercase;
+  padding: 0;                 
+  padding-top: 15px;
+  margin: 0 auto;            
+  display: flex;            
+  justify-content: center; 
+  align-items: center;    
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;            
+    gap: 2rem;               
+  }
+
+  li {
+    margin: 0;              
+    padding: 0;
+    display: block;
+    position: relative;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-left: 2px solid $white;
+
+    &:first-of-type {
+      border-left: none;      // remove first border
+    }
+
+    &:hover,
+    &.nav-current {
+      color: $grey;
+      border-color: $black;
+    }
+  }
+}
+
+.nav-menu li:first-child>a {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.search-toggle {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 2;
+    padding: 10px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 30px;
+}
+
+.nav-menu li:hover>a,
+.nav-menu .nav-current>a,
+.search-toggle:hover {
+  text-decoration: underline;
+    color: $black
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/**
+ * Site Search
+ * ----------------------------------------------------------------------------
+ */
+
+.site-search {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: $white;
+    height: 100%;
+    color: $black;
+    left: 0;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform .3s ease-in-out, visibility 0s .3s;
+    transition: -webkit-transform .3s ease-in-out, visibility 0s .3s;
+    transition: transform .3s ease-in-out, visibility 0s .3s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9999;
+}
+
+.search--opened {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.search--opened .site {
+    position: relative;
+}
+
+.search--opened .site-search {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    visibility: visible;
+}
+
+.search-scrollable {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+.search-box {
+    position: relative;
+}
+
+#search-close {
+    border-radius: 2px;
+    height: 38px;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 38px;
+}
+
+.close-icon {
+    background: 0;
+    color: $black;
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    &:before,
+    &:after {
+        background: currentColor;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        width: 100%;
+    }
+}
+
+.close-icon {
+    &:before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.search-box-inside {
+    padding-bottom: 60px;
+    padding-top: 90px;
+}
+
+.site-search .search-form {
+    margin-bottom: 12px;
+}
+
+.site-search .search-field {
+    background: transparent;
+    border-width: 0 0 1px 0;
+    color: $grey;
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    height: 72px;
+    padding: 15px;
+    width: 100%;
+    &:focus {
+        background: transparent;
+    }
+}
+
+.search-box span {
+    display: block;
+    font-size: 12px;
+}
+
+.search-box-inside {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+ul.search-results {
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search-results li {
+    border-bottom: 1px solid #30373d;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    a {
+        text-decoration: none;
+    }
+}
+.values-grid {
+  display: grid;
+  /* 4 columns on large screens, collapsing down on smaller ones */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;              /* space between cards */
+  max-width: 1000px;
+  margin: 0 auto;         /* center the whole grid */
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.value-image {
+  width: 250px;     /* or whatever square/rectangle you like */
+  height: 560px;
+  object-fit: cover;
+  border-radius: 8px;  /* optional */
+}
+
+.values-grid h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.values-grid p {
+  font-size: 0.95rem;
+  color: $grey;
+}
+
+.values-grid,
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card,
+.insta-card {
+  text-align: center;
+}
+
+.value-image,
+.insta-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
