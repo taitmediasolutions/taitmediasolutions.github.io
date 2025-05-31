@@ -3,19 +3,94 @@ layout: default
 ---
 {% include analytics.html %}
 <main class="content fade-in-down delay-0_75s">
-    <div class="inner">
-        <article class="post">
-            {% if page.featured_image %}
-            <div class="post-thumbnail"><img src="{{ "/images/" | append: page.featured_image | prepend: site.baseurl }}" alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}" /></div>
-            {% endif %}
-            <div class="entry-box">
-                <header class="entry-header">
-                    <h1 class="entry-title">{{ page.title }}</h1>
-                </header><!-- .entry-header -->
-                <div class="entry-content">
-                    {{content}}
-                </div><!-- .entry-content -->
-            </div><!-- .entry-box -->
-        </article><!-- .post -->
-    </div><!-- .inner -->
-</main><!-- .content -->
+  <div class="inner">
+    <article class="post">
+
+<div class="post-cover">
+  {% if page.featured_image %}
+    <img
+      src="{{ site.baseurl }}/images/{{ page.featured_image }}"
+      alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}"
+      class="post-cover__image"
+    />
+  {% endif %}
+
+  <div class="post-cover__overlay">
+    <div class="post-cover__text">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="post-cover__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+
+      <ul class="service-list">
+        <li>Social Media Marketing</li>
+        <li>Content Creation</li>
+        <li>Brand Strategy</li>
+        <li>Performance Marketing</li>
+        <li>Media Consulting</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-content-wrapper">
+
+<section class="services-section">
+  <div class="service-block">
+    <div class="service-image">
+      <img src="{{ '/images/services4.jpg' | prepend: site.baseurl }}" alt="Social Media Marketing">
+    </div>
+    <div class="service-text">
+      <h2>Social Media Marketing</h2>
+      <p>We craft and manage high-performing social media strategies to grow your audience, boost engagement, and drive brand loyalty across platforms like Instagram, Facebook, LinkedIn, and TikTok.</p>
+    </div>
+  </div>
+
+  <div class="service-block reverse">
+    <div class="service-image">
+      <img src="{{ '/images/services8.png' | prepend: site.baseurl }}" alt="Content Creation">
+    </div>
+    <div class="service-text">
+      <h2>Content Creation</h2>
+      <p>From short-form reels to stunning photo shoots, we create original, scroll-stopping content tailored to your audience and brand goals.</p>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <div class="service-image">
+      <img src="{{ '/images/services1.jpg' | prepend: site.baseurl }}" alt="Paid Advertising">
+    </div>
+    <div class="service-text">
+      <h2>Brand Strategy</h2>
+      <p>We specialize in helping brands grow by building long-term strategies that shape reputation, trust, and visibility</p>
+    </div>
+  </div>
+
+  <div class="service-block reverse">
+    <div class="service-image">
+      <img src="{{ '/images/services3.jpg' | prepend: site.baseurl }}" alt="Analytics & Strategy">
+    </div>
+    <div class="service-text">
+      <h2>Performance Marketing</h2>
+      <p>We don’t just guess — we analyze. Our monthly reports and data-driven strategies ensure your marketing is always evolving.</p>
+    </div>
+  </div>
+
+
+  <div class="service-block">
+    <div class="service-image">
+      <img src="{{ '/images/services5.jpg' | prepend: site.baseurl }}" alt="Consulting">
+    </div>
+    <div class="service-text">
+      <h2>Media Consulting</h2>
+      <p>Need marketing expertise without hiring full-time? Our consulting services cover everything from digital audits to comprehensive brand makeovers.</p>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<div style="position: ; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_FfBbARrQ8mkg6QyVBVxya2DTZbQZ1CcpsffhK9Ve5F7Qbg/viewform?embedded=true" width="640" height="1368" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
