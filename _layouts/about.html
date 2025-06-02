@@ -1,0 +1,225 @@
+---
+layout: default
+---
+{% include analytics.html %}
+
+<style>
+  body {
+    background-color: #000 !important;
+  }
+  .about-content {
+    color: #fff;
+    padding-top: 52px;
+  }
+  .about-content a,
+  .about-content .cta {
+    color: #fff;
+    border-color: #fff;
+  }
+  .about-content .service-text h2 {
+    color: #fff;
+  }
+  .about-content .service-text p {
+    color: #ddd;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #bbb;
+  }
+  .contact-form button {
+    background: #fff;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .contact-form button:hover {
+    background: #ddd;
+  }
+
+  /* Updated cover styles: taller + object-fit: contain */
+  .post-cover {
+    position: relative;
+    width: 100%;
+    height: 80vh;           /* adjust up/down (70vh–90vh) to taste */
+    background-color: #000;
+    overflow: hidden;
+  }
+  .post-cover__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     /* ensure full photo is visible (no cropping) */
+    object-position: center; /* always center the image */
+    display: block;
+  }
+  .post-cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+  .cover-text-top-left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    max-width: 40%;
+    text-align: left;
+  }
+  .cover-text-top-left h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .cover-text-bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    max-width: 40%;
+    text-align: right;
+  }
+  .cover-text-bottom-right h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .cover-text-bottom-right p {
+    color: #eee;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+</style>
+
+<main class="content fade-in-down delay-0_75s about-content">
+  <div class="inner">
+    <article class="post">
+
+      <!-- COVER SECTION: vertical image with object-fit: contain -->
+      <div class="post-cover">
+        <img
+          src="{{ site.baseurl }}/images/{{ page.featured_image }}"
+          alt="Anrich Tait (Vertical B/W)"
+          class="post-cover__image"
+        />
+        <div class="post-cover__overlay">
+          <!-- Top‐left “Meet the Team” -->
+          <div class="cover-text-top-left">
+            <h1>About Us</h1>
+          </div>
+
+          <!-- Bottom‐right “CEO & Founder” + Bio -->
+          <div class="cover-text-bottom-right">
+            <h2>CEO &amp; Founder, Anrich Tait</h2>
+            <p>
+              Tait Media Solutions is a boutique marketing agency delivering premium marketing and consulting services to creators and businesses. Founded by Anrich Tait — a strategist, fighter, and creator — Tait Media exists on the edge of modern marketing. We craft bold, scroll-stopping campaigns that don’t just look good but convert into tangible gains.
+              Born from a mix of precision and refined aesthetic, we blend creative intuition with tactical execution. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.post-cover -->
+
+      <!-- MAIN CONTENT WRAPPER -->
+      <div class="page-content-wrapper" style="background: transparent; padding: 2rem 0;">
+        <!-- ABOUT INFO SECTION -->
+        <section class="services-section">
+          <!-- VISION -->
+          <div class="service-block reverse">
+            <div class="service-image">
+              <img
+                src="{{ '/images/stock7.jpg' | prepend: site.baseurl }}"
+                alt="Our Vision"
+                style="max-width: 400px; width: 100%; border-radius: 1rem;"
+              />
+            </div>
+            <div class="service-text">
+              <h2>Vision</h2>
+              <p>
+                To become the go-to boutique agency for high-performance entrepreneurs, delivering the elite-level strategy and execution typically reserved for industry giants.
+              </p>
+            </div>
+          </div>
+
+          <!-- MISSION -->
+          <div class="service-block">
+            <div class="service-image">
+              <img
+                src="{{ '/images/stock4.jpg' | prepend: site.baseurl }}"
+                alt="Our Mission"
+                style="max-width: 400px; width: 100%; border-radius: 1rem;"
+              />
+            </div>
+            <div class="service-text">
+              <h2>Mission</h2>
+              <p>
+                To craft elite, bespoke marketing experiences that turn driven entrepreneurs into iconic, premium brands.
+              </p>
+            </div>
+          </div>
+
+          <!-- VALUES -->
+          <div class="service-block reverse">
+            <div class="service-image">
+              <img
+                src="{{ '/images/stock3.jpg' | prepend: site.baseurl }}"
+                alt="Our Values"
+                style="max-width: 400px; width: 100%; border-radius: 1rem;"
+              />
+            </div>
+            <div class="service-text">
+              <h1 style="color: #fff">Values</h1>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Luxury</strong><br />
+                  From strategy to visuals, every strategy and asset is crafted to reflect prestige and polish.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Vision</strong><br />
+                  We help build brands that outlast trends. Our work is guided by clear, long-term vision designed to create legacy, not just noise.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Accuracy</strong><br />
+                  In marketing, details are everything. We execute with surgical precision, ensuring that every asset, ad, and message hits its mark.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Innovation</strong><br />
+                  Whether it’s creative direction, platform strategy, or content production we are constantly testing new ideas and technologies to keep our clients ahead of the curve.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- BOOK A MEETING BUTTON -->
+        <div class="text-center" style="margin: 3rem 0;">
+          <a href="#contact-section" class="cta" style="background: #fff; color: #000; padding: 1rem 2rem; text-transform: uppercase; border: none; text-decoration: none; font-weight: bold;">
+            Book a Meeting
+          </a>
+        </div>
+
+        <!-- CONTACT FORM (using Formspree) -->
+        <section id="contact-section" class="contact-form" style="max-width: 600px; margin: 0 auto;">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <textarea name="message" placeholder="How can we help you?" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+      <!-- /.page-content-wrapper -->
+    </article>
+  </div>
+</main>
