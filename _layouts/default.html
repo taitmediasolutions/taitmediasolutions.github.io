@@ -31,7 +31,9 @@
     {% include header.html %}
     {{content}}
     {% include widgets.html %}
-    {% include footer.html %}
+    {% unless page.no_footer %}
+      {% include footer.html %}
+    {% endunless %}
   </div><!-- .site -->
 
   <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>

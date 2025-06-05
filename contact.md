@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: contact
 title: Contact Us
 description: Get in touch with Tait Media Solutions
+featured_image: stock11.jpg
 ---
 
 Reach out via any of the channels below, and Anrich will respond as soon as possible.

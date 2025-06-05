@@ -1,0 +1,222 @@
+---
+layout: default
+no_footer: true
+---
+{% include analytics.html %}
+
+<style>
+  /* =======================
+     MATCH ABOUT PAGE STYLING
+     ======================= */
+
+  body {
+    background-color: #000 !important;
+  }
+
+  .contact-content {
+    color: #fff;
+    padding-top: 52px;
+  }
+  .contact-content a,
+  .contact-content .cta {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  /* ---------- COVER SECTION (edited to use object-fit: cover) ---------- */
+  .post-cover {
+    position: relative;
+    width: 100%;            /* spans full viewport width (since it’s outside .inner) */
+    height: 80vh;           /* adjust between 70vh–90vh to taste */
+    background-color: #000;
+    overflow: hidden;
+  }
+  .post-cover__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* fill the container’s width, cropping top/bottom as needed */
+    object-position: center;
+    display: block;
+  }
+  .post-cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .cover-text-top-left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    max-width: 40%;
+    text-align: left;
+  }
+  .cover-text-top-left h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .cover-text-bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    max-width: 40%;
+    text-align: right;
+  }
+  .cover-text-bottom-right h2,
+  .cover-text-bottom-right p {
+    color: #eee;
+    line-height: 1.5;
+  }
+  .cover-text-bottom-right h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .cover-text-bottom-right p {
+    font-size: 1rem;
+  }
+
+  /* ---------- MAIN CONTENT WRAPPER ---------- */
+  .page-content-wrapper {
+    background: transparent;
+    padding: 2rem 0;
+  }
+
+  /* Intro text (same styling as About context) */
+  .intro-text {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: #ddd;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* “Email Us Now” button (re-uses .cta conventions) */
+  .email-button-wrapper {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .email-button-wrapper .cta {
+    background: #fff;
+    color: #000;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .email-button-wrapper .cta:hover {
+    background: #ddd;
+  }
+
+  /* Contact‐details list (unstyled UL, white links) */
+  .contact-details {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ddd;
+  }
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-details li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contact-details a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<main class="content fade-in-down delay-0_75s contact-content">
+
+  <!-- Move .post-cover OUTSIDE of .inner so it truly fills the viewport -->
+  <div class="post-cover">
+    <img
+      src="{{ site.baseurl }}/images/{{ page.featured_image }}"
+      alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}Contact Us{% endif %}"
+      class="post-cover__image"
+    />
+    <div class="post-cover__overlay">
+      <!-- Top‐left “Contact Us” -->
+      <div class="cover-text-top-left">
+        <h1>Contact Us</h1>
+      </div>
+
+      <!-- Bottom‐right optional subtext -->
+      <div class="cover-text-bottom-right">
+        <h2>Let’s build something great</h2>
+        <p>
+          Reach out for strategy calls, creative briefs, or just say hello. We’re here to help elevate your brand.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /.post-cover -->
+
+
+  <!-- Wrap the rest inside .inner so it’s constrained to your normal max-width -->
+  <div class="inner">
+    <article class="post">
+
+      <div class="page-content-wrapper">
+        <!-- Optional intro text -->
+        <div class="intro-text">
+          <p>
+            Whether you have a quick question or a large-scale campaign in mind,
+            drop us a line below. Hit “Email Us Now” to open your default mail client,
+            or scroll down for all of our social and phone details.
+          </p>
+        </div>
+
+        <!-- “Email Us Now” Button -->
+        <div class="email-button-wrapper">
+          <a href="mailto:info@taitmediasolutions.com" class="cta">Email Us Now</a>
+        </div>
+
+        <!-- CONTACT DETAILS SECTION -->
+        <section id="contact-details" class="contact-details">
+          <ul>
+            <li>
+              <strong>Instagram:</strong>
+              <a href="https://instagram.com/taitmediasolutions" target="_blank">@taitmediasolutions</a>
+            </li>
+            <li>
+              <strong>Facebook:</strong>
+              <a href="https://www.facebook.com/profile.php?id=61576400173269" target="_blank">facebook.com/taitmediasolutions</a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/company/107590567" target="_blank">linkedin.com/in/taitmediasolutions</a>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:info@taitmediasolutions.com">info@taitmediasolutions.com</a>
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+27697263764">+27 69 726 3764</a>
+            </li>
+            <li>
+              <strong>Substack:</strong>
+              <a href="https://yourpublication.substack.com" target="_blank">yourpublication.substack.com</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- /.page-content-wrapper -->
+
+    </article>
+  </div>
+  <!-- /.inner -->
+</main>
