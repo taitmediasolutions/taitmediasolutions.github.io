@@ -19,6 +19,8 @@ navigation:
   url: /
 - text: About
   url: /about/
+- text: Founder's Pass
+  url: /founders/
 - text: Contact
   url: /contact/
 - text: Services

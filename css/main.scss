@@ -564,3 +564,66 @@ h4, h5, h6 {
   margin-bottom: 0.75rem;
   text-transform: uppercase; /* remove if you prefer sentence‐case */
 }
+/* Add to existing styles */
+.luxury-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.gold-divider {
+  height: 1px;
+  width: 100px;
+  background: #D4AF37;
+  margin: 20px auto;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-phase {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.phase-number {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #D4AF37;
+}
+
+.spots-remaining {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.luxury-button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #D4AF37;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.luxury-button:hover {
+  background: #D4AF37;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
