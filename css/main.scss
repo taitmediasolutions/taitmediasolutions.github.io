@@ -1,32 +1,33 @@
 ---
 ---
 
-// ───────────────────────────────────────────────────────────
-// Variables: only three colors + Typography pulled from variables.scss
-// ───────────────────────────────────────────────────────────
 $white: #ffffff;
 $black: #000000;
 $grey:  #777777;
 
-// Base imports (this will bring in your variables.scss, which already has the Google‐Fonts import)
 @import "variables";
 @import "reset";
 @import "general";
 
-// ───────────────────────────────────────────────────────────
-// Global
-// ───────────────────────────────────────────────────────────
+$side-padding: 1rem !default;
+$max-content-width: 1000px !default;
+
+
 body {
-  font-family: $base-font;  /* fallback body font */
+  font-family: $base-font; 
   font-size: 1.0rem;
   background: $white;
   color: $black;
 }
 
 main > section {
-  padding: 4rem 1rem;
+  padding: 4rem $side-padding;
   transition: background 0.3s, color 0.3s;
 }
+
+.section-heading {
+    font-size: 1.75rem; 
+  }
 
 .white-section {
   background: $white;
@@ -48,7 +49,6 @@ main > section {
   }
 }
 
-// If you ever need grey:
 .grey-section {
   background: $grey;
   color: $black;
@@ -59,15 +59,15 @@ main > section {
   }
 }
 
-// Center utility
 .text-center { text-align: center; }
 
-// Hero banner: centered image
 .hero-banner {
   width: 100%;
-  overflow: hidden;
   text-align: center;
+  padding: 0;
+  overflow: hidden;
 }
+
 .banner-image {
   display: inline-block;
   width: 100%;
@@ -79,12 +79,11 @@ main > section {
   background: $white;
   color: $black;
   font-size: 1.500rem;
-  font-family: $heading-font;  // Cormorant Garamond
+  font-family: $heading-font;
   text-align: center;
   max-width: 100%;
 }
 
-// Brands grid
 .brands-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -107,7 +106,6 @@ main > section {
   &:hover { color: $white; }
 }
 
-// Contact button
 .contact a {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -120,11 +118,6 @@ main > section {
     color: $white;
   }
 }
-
-/**
- * Site Navigation
- * ----------------------------------------
- */
 
 .site-nav {
   background-color: $white;
@@ -145,9 +138,9 @@ main > section {
 }
 
 .nav-menu {
-  font: bold 12px/1.5 $heading-font;  // Montserrat
+  font: bold 12px/1.5 $heading-font; 
   text-transform: uppercase;
-  padding: 15px 0 1rem 0;  // Added padding-bottom: 1rem
+  padding: 15px 0 1rem 0; 
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -175,7 +168,7 @@ main > section {
     border-left: 2px solid $white;
 
     &:first-of-type {
-      border-left: none; // remove first border
+      border-left: none;
     }
 
     &:hover,
@@ -214,12 +207,10 @@ main > section {
 
 .menu-toggle {
   display: none;
+  @media {
+    display: block;
+  }
 }
-
-/**
- * Site Search
- * ----------------------------------------------------------------------------
- */
 
 .site-search {
   -webkit-backface-visibility: hidden;
@@ -370,11 +361,10 @@ ul.search-results {
 
 .values-grid {
   display: grid;
-  /* 4 columns on large screens, collapsing down on smaller ones */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;              /* space between cards */
+  gap: 2rem;             
   max-width: 1000px;
-  margin: 0 auto;         /* center the whole grid */
+  margin: 0 auto;      
 }
 
 .value-card {
@@ -385,10 +375,10 @@ ul.search-results {
 }
 
 .value-image {
-  width: 250px;     /* or whatever square/rectangle you like */
-  height: 560px;
+  width: 100%;    
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;  /* optional */
+  border-radius: 8px; 
 }
 
 .values-grid h3 {
@@ -483,7 +473,7 @@ ul.search-results {
 .service-list li {
   background: #fff;
   padding: 0.4rem 0.8rem;
-  border-radius: 999px;   /* pill‐shaped tags */
+  border-radius: 999px;
   color: #000;
 }
 
@@ -553,7 +543,7 @@ h1, h2, h3 {
   font-family: $heading-font;
   font-weight: 400; 
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 h4, h5, h6 {
@@ -562,9 +552,8 @@ h4, h5, h6 {
   letter-spacing: 0.5px; 
   line-height: 1.3;
   margin-bottom: 0.75rem;
-  text-transform: uppercase; /* remove if you prefer sentence‐case */
+  text-transform: uppercase;
 }
-/* Add to existing styles */
 .luxury-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -573,7 +562,7 @@ h4, h5, h6 {
 
 .lead-text {
   font-size: 1.2rem;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -626,4 +615,24 @@ h4, h5, h6 {
   color: #000;
   font-weight: bold;
   box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 0 $side-padding;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    padding: 0 ($side-padding * 2);
+  }
+}
+
+// Mobile breakpoint: up to 768px
+@media (max-width: 768px) {
+  main > section {
+    padding: 2rem $side-padding;
+  }
+  .container {
+    padding: 0 ($side-padding * 1);
+  }
 }

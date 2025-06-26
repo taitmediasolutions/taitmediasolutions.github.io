@@ -19,18 +19,17 @@ no_footer: true
     border-color: #fff;
   }
 
-  /* ---------- COVER SECTION (edited to use object-fit: cover) ---------- */
   .post-cover {
     position: relative;
-    width: 100%;            /* spans full viewport width (since it’s outside .inner) */
-    height: 80vh;           /* adjust between 70vh–90vh to taste */
+    width: 100%;            
+    height: 80vh;           
     background-color: #000;
     overflow: hidden;
   }
   .post-cover__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* fill the container’s width, cropping top/bottom as needed */
+    object-fit: cover;      
     object-position: center;
     display: block;
   }
@@ -74,13 +73,11 @@ no_footer: true
     font-size: 1rem;
   }
 
-  /* ---------- MAIN CONTENT WRAPPER ---------- */
   .page-content-wrapper {
     background: transparent;
     padding: 2rem 0;
   }
 
-  /* Intro text (same styling as About context) */
   .intro-text {
     max-width: 600px;
     margin: 0 auto 2rem auto;
@@ -89,7 +86,6 @@ no_footer: true
     line-height: 1.6;
   }
 
-  /* “Email Us Now” button (re-uses .cta conventions) */
   .email-button-wrapper {
     text-align: center;
     margin: 2rem 0;
@@ -110,7 +106,6 @@ no_footer: true
     background: #ddd;
   }
 
-  /* Contact‐details list (unstyled UL, white links) */
   .contact-details {
     max-width: 600px;
     margin: 0 auto;
@@ -136,7 +131,6 @@ no_footer: true
 
 <main class="content fade-in-down delay-0_75s contact-content">
 
-  <!-- Move .post-cover OUTSIDE of .inner so it truly fills the viewport -->
   <div class="post-cover">
     <img
       src="{{ site.baseurl }}/images/{{ page.featured_image }}"
@@ -144,12 +138,10 @@ no_footer: true
       class="post-cover__image"
     />
     <div class="post-cover__overlay">
-      <!-- Top‐left “Contact Us” -->
       <div class="cover-text-top-left">
         <h1>Contact Us</h1>
       </div>
 
-      <!-- Bottom‐right optional subtext -->
       <div class="cover-text-bottom-right">
         <h2>Let’s build something great</h2>
         <p>
@@ -158,15 +150,12 @@ no_footer: true
       </div>
     </div>
   </div>
-  <!-- /.post-cover -->
 
 
-  <!-- Wrap the rest inside .inner so it’s constrained to your normal max-width -->
   <div class="inner">
     <article class="post">
 
       <div class="page-content-wrapper">
-        <!-- Optional intro text -->
         <div class="intro-text">
           <p>
             Whether you have a quick question or a large-scale campaign in mind,
@@ -175,12 +164,10 @@ no_footer: true
           </p>
         </div>
 
-        <!-- “Email Us Now” Button -->
         <div class="email-button-wrapper">
           <a href="mailto:info@taitmediasolutions.com" class="cta">Email Us Now</a>
         </div>
 
-        <!-- CONTACT DETAILS SECTION -->
         <section id="contact-details" class="contact-details">
           <ul>
             <li>
@@ -210,9 +197,7 @@ no_footer: true
           </ul>
         </section>
       </div>
-      <!-- /.page-content-wrapper -->
 
     </article>
   </div>
-  <!-- /.inner -->
 </main>

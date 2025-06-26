@@ -48,19 +48,18 @@ layout: default
     background: #ddd;
   }
 
-  /* Updated cover styles: taller + object-fit: contain */
   .post-cover {
     position: relative;
     width: 100%;
-    height: 80vh;           /* adjust up/down (70vh–90vh) to taste */
+    height: 80vh;           
     background-color: #000;
     overflow: hidden;
   }
   .post-cover__image {
     width: 100%;
     height: 100%;
-    object-fit: contain;     /* ensure full photo is visible (no cropping) */
-    object-position: center; /* always center the image */
+    object-fit: contain;     
+    object-position: center;
     display: block;
   }
   .post-cover__overlay {
@@ -106,7 +105,6 @@ layout: default
   <div class="inner">
     <article class="post">
 
-      <!-- COVER SECTION: vertical image with object-fit: contain -->
       <div class="post-cover">
         <img
           src="{{ site.baseurl }}/images/{{ page.featured_image }}"
@@ -114,7 +112,6 @@ layout: default
           class="post-cover__image"
         />
         <div class="post-cover__overlay">
-          <!-- Top‐left “Meet the Team” -->
           <div class="cover-text-top-left">
             <h1>About Us</h1>
           </div>
@@ -128,13 +125,9 @@ layout: default
           </div>
         </div>
       </div>
-      <!-- /.post-cover -->
 
-      <!-- MAIN CONTENT WRAPPER -->
       <div class="page-content-wrapper" style="background: transparent; padding: 2rem 0;">
-        <!-- ABOUT INFO SECTION -->
         <section class="services-section">
-          <!-- VISION -->
           <div class="service-block reverse">
             <div class="service-image">
               <img
@@ -151,7 +144,6 @@ layout: default
             </div>
           </div>
 
-          <!-- MISSION -->
           <div class="service-block">
             <div class="service-image">
               <img
@@ -168,7 +160,6 @@ layout: default
             </div>
           </div>
 
-          <!-- VALUES -->
           <div class="service-block reverse">
             <div class="service-image">
               <img
@@ -201,14 +192,12 @@ layout: default
           </div>
         </section>
 
-        <!-- BOOK A MEETING BUTTON -->
         <div class="text-center" style="margin: 3rem 0;">
           <a href="#contact-section" class="cta" style="background: #fff; color: #000; padding: 1rem 2rem; text-transform: uppercase; border: none; text-decoration: none; font-weight: bold;">
             Book a Meeting
           </a>
         </div>
 
-        <!-- CONTACT FORM (using Formspree) -->
         <section id="contact-section" class="contact-form" style="max-width: 600px; margin: 0 auto;">
           <form action="https://formspree.io/f/your-form-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required />
@@ -218,7 +207,6 @@ layout: default
           </form>
         </section>
       </div>
-      <!-- /.page-content-wrapper -->
     </article>
   </div>
 </main>
