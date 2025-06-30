@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<main class="content fade-in-down delay-0_75s">
+
+  <div class="post-cover">
+    <img
+      src="{{ site.baseurl }}/images/{{ page.featured_image }}"
+      alt="Home Page Image"
+      class="post-cover__image"
+    />
+    <div class="post-cover__overlay">
+      <div class="cover-text">
+        <h1 class="site-title">Tait Media Solutions</h1>
+      </div>
+    </div>
+  </div>
+
+  <section class="intro white-section">
+    <p>
+      Tait Media Solutions specializes in helping the creators and businesses of
+      tomorrow build a lasting brand.
+    </p>
+  </section>
+
+ <section class="values white-section text-center">
+    <h2 class="section-heading">Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/values2.jpg" alt="Luxury" class="value-image" />
+        <h3>Luxury</h3>
+        <p>We craft every detail to exude sophistication and elegance.</p>
+      </div>
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/values1.jpg" alt="Vision" class="value-image" />
+        <h3>Vision</h3>
+        <p>Building brands from the ground up with a forward-thinking mindset.</p>
+      </div>
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/values3.jpg" alt="Accuracy" class="value-image" />
+        <h3>Accuracy</h3>
+        <p>We stand on truth and clarity—our strategies are backed by data and honesty.</p>
+      </div>
+      <div class="value-card">
+        <img src="{{ site.baseurl }}/images/values4.jpg" alt="Innovation" class="value-image" />
+        <h3>Innovation</h3>
+        <p>Constantly pushing boundaries to keep your brand ahead of the curve.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands black-section">
+    <h2 style="color: #fff" class="text-center">Our Brands</h2>
+    <div class="brands-grid">
+      {% for brand in site.data.brands %}
+      <div class="brand-card">
+        <img src="{{ brand.logo }}" alt="{{ brand.name }} logo" />
+        <h3 style="color: #fff">{{ brand.name }}</h3>
+        <p>{{ brand.description }}</p>
+        <a href="{{ brand.url }}" target="_blank">Learn More…</a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+<section class="cta-section white-section text-center">
+  <div class="application-card">
+    <h1>Apply For The Founders Pass</h1>
+    <p class="exclusivity-note">
+      <span class="spots-remaining">1</span> of 3 Founder's Passes remaining
+    </p>
+    <div class="gold-divider"></div>
+    <p class="investment-note">
+      Become a lasting brand
+    </p>
+    <a style="color:white" href="mailto:info@taitmediasolutions.com?subject=Request%20for%20Q4%20Application%20Dossier&body=Hi%20Tait%20Media%20Solutions,%0D%0AI'm%20interested%20in%20applying%20for%20%20access to the Founder's Pass."
+       class="luxury-button">
+        Email to Request Access
+    </a>
+    <p class="disclaimer">
+      By application only. Applications close August 1st
+    </p>
+  </div>
+</section>
+</main>
+
+
+</section>
