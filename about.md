@@ -2,7 +2,7 @@
 layout: about
 title: About Us
 description: Boutique Digital Marketing Agency
-featured_image: ceo.png
+featured_image: spiral.jpg
 ---
 
 Tait Media Solutions is a boutique digital marketing agency founded by Anrich Tait. We empower creators and forward-thinking businesses with bespoke branding, content and audience-building strategies, drawing on a unique blend of global experiences to bring fresh perspective to the digital space.
