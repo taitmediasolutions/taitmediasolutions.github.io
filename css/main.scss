@@ -645,3 +645,48 @@ h4, h5, h6 {
   text-align: center;
   line-height: 1.1;
 }
+
+
+@media (max-width: 768px) { // Or your desired mobile breakpoint
+  .menu-toggle {
+    display: block; // Or 'inline-block', 'flex' depending on your desired layout
+  }
+
+  .nav-menu {
+    display: none; // Hide the menu by default on mobile, it will be shown by JS
+    flex-direction: column; // Ensure vertical stacking when shown
+    width: 100%;
+    padding-top: 0; // Adjust padding if needed
+    position: absolute; // Or 'relative' depending on header layout
+    top: 100%; // Position below the header/nav bar
+    left: 0;
+    background-color: $white; // Or your desired menu background
+    border-top: 1px solid #eee; // Optional separator
+
+    ul {
+      flex-direction: column;
+      gap: 0; // Remove horizontal gap for vertical menu
+      width: 100%;
+    }
+
+    li {
+      border-bottom: 1px solid #eee; // Optional line between menu items
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    a {
+      padding: 1rem; // Adjust padding for touch targets
+      border-left: none; // Remove left border for vertical menu
+      display: block; // Make links fill the width
+      text-align: center; // Center text if desired
+      &:hover,
+      &.nav-current {
+        color: $grey; // Use your `$grey` variable for hover
+        background-color: #f8f8f8; // Subtle background on hover
+        border-color: transparent; // Remove border on hover
+      }
+    }
+  }
+}
